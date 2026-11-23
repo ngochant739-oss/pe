@@ -164,7 +164,22 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    body {
-        padding: 12px;
-    }
+
+body {
+    background-image:
+        linear-gradient(
+            rgba(247, 241, 229, 0.25),
+            rgba(247, 241, 229, 0.35)
+        ),
+        url("library-bg.gif");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #514936;
+    font-family: "Trebuchet MS", sans-serif;
+    padding: 25px;
 }
+
