@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7f1e5;
+    color: #514936;
+    font-family: "Trebuchet MS", sans-serif;
+    padding: 25px;
+}
+
+.header {
+    text-align: center;
+    padding: 25px;
+    background: #e5eadb;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #536b4d;
+    margin-bottom: 10px;
+}
+
+.welcome {
+    background: #f3dfc5;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.welcome h2 {
+    margin-bottom: 10px;
+}
+
+.sun {
+    font-size: 55px;
+}
+
+.progress-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.progress-card h2 {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    height: 14px;
+    background: #e9e5dc;
+    border-radius: 20px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #8da77d;
+    transition: width 0.3s;
+}
+
+section > h2 {
+    margin-bottom: 18px;
+}
+
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.subject {
+    padding: 25px;
+    border-radius: 18px;
+    font-size: 30px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.subject:hover {
+    transform: translateY(-5px);
+}
+
+.subject h3 {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.math { background: #e5e9d9; }
+.english { background: #dce8e9; }
+.literature { background: #f2dfd4; }
+.physics { background: #f4e9c9; }
+.chemistry { background: #e7dfed; }
+.biology { background: #dce9d6; }
+
+.tasks {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d8d2c4;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    background: #829875;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #657b5a;
+}
+
+#task-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#task-list li {
+    padding: 12px;
+    background: #f7f4ed;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#task-list li.done {
+    text-decoration: line-through;
+    opacity: 0.55;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #8b806b;
+}
+
+@media (max-width: 600px) {
+    .subjects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body {
+        padding: 12px;
+    }
+}
